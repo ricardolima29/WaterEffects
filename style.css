@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(162, 234, 247);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.content{
+    position: relative;
+    min-height: 30vh;
+    justify-content: center;
+    align-items: center;
+    left: 955px;
+    top: 95px;
+}
+.content h2{
+    position: absolute;
+    transform: translate(-55% , -55% );
+    font-size: 6em;
+
+}
+.content h2:nth-child(1){    
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+.content h2:nth-child(2){    
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+    0%,100%{
+        clip-path: polygon(0 39%, 17% 41%, 31% 50%, 42% 59%, 54% 63%, 64% 65%, 76% 66%, 87% 66%, 96% 64%, 100% 59%, 100% 100%, 0 100%);
+    }
+    50%{
+        clip-path: polygon(0 62%, 10% 67%, 22% 70%, 34% 72%, 46% 70%, 59% 65%, 69% 59%, 78% 54%, 88% 50%, 100% 49%, 100% 100%, 0 100%);
+    }
+    
+}
+.icon{
+    position: absolute;
+    width: 237px;
+    height: 210px;
+    box-shadow: inset 10px 10px 10px rgba(0,0,0,0.05),
+    15px 25px 10px rgba(0,0,0,0.05),15px 20px 20px rgba(0,0,0,0.05),
+    inset -10px -10px 15px rgba(255,255,255,0.9);
+    border-radius: 200%;
+    left: 820px;
+    top: 5px;
+}
+.icon::before{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 180px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background:#fff;
+}
+.icon::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 168px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:#fff;
+}
+.icon ion-icon{
+    
+    font-size: 1em;
+    color: #1a1d1f;
+    left: 199px;
+    position: absolute;
+    top: 87px;
+}
+#content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    background-color: rgb(162, 234, 247);
+    position: relative;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
